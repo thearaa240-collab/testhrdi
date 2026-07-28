@@ -7,24 +7,51 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- របារក្បាលទំព័រ -->
     <header>
-      <h1>📚 ហាងសៀវភៅ PU Ra Book Store</h1>
+      <h1>📚 PU Ra Book Store</h1>
+      <p>បណ្ដុំសៀវភៅចំណេះដឹង និងបច្ចេកវិទ្យាឈានមុខ</p>
     </header>
 
-    <!-- 🟢 បន្ថែមដុំកូដ Menu នៅត្រង់ចំណុចនេះ -->
+    <!-- របារ Menu -->
     <nav class="navbar">
-      <a href="#">ទំព័រដើម</a>
+      <a href="#" class="active">ទំព័រដើម</a>
       <a href="#">សៀវភៅទាំងអស់</a>
       <a href="#">ការបញ្ជាទិញ</a>
       <a href="#">ទាក់ទងយើង</a>
     </nav>
 
-    <main>
-      <div class="book-card">
-        <div class="book-cover">📖</div>
-        <h3>រៀនសរសេរកូដដំបូង</h3>
-        <p class="price">$15.00</p>
-        <button id="buy-btn">ទិញឥឡូវនេះ</button>
+    <!-- ផ្នែកបង្ហាញសៀវភៅ -->
+    <main class="container">
+      <h2 class="section-title">✨ សៀវភៅណែនាំសម្រាប់អ្នក</h2>
+
+      <div class="book-grid">
+        <!-- ឡូកសៀវភៅទី ១ -->
+        <div class="book-card">
+          <div class="book-cover">📘</div>
+          <h3>រៀនសរសេរកូដដំបូង</h3>
+          <p class="author">ដោយ៖ ភូរ៉ា អាយធី</p>
+          <p class="price">$15.00</p>
+          <button class="buy-btn">ទិញឥឡូវនេះ</button>
+        </div>
+
+        <!-- ឡូកសៀវភៅទី ២ -->
+        <div class="book-card">
+          <div class="book-cover">📙</div>
+          <h3>មូលដ្ឋានគ្រឹះ Git & GitHub</h3>
+          <p class="author">ដោយ៖ ភូរ៉ា អាយធី</p>
+          <p class="price">$12.50</p>
+          <button class="buy-btn">ទិញឥឡូវនេះ</button>
+        </div>
+
+        <!-- ឡូកសៀវភៅទី ៣ -->
+        <div class="book-card">
+          <div class="book-cover">📗</div>
+          <h3>បណ្ដាញកុំព្យូទ័រគ្រឹះ</h3>
+          <p class="author">ដោយ៖ ភូរ៉ា អាយធី</p>
+          <p class="price">$18.00</p>
+          <button class="buy-btn">ទិញឥឡូវនេះ</button>
+        </div>
       </div>
     </main>
 
