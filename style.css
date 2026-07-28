@@ -1,22 +1,140 @@
-/* 🟢 កូដរចនាសម្រាប់របារ Menu */
+/* កំណត់ទម្រង់ផ្ទៃវែបសាយរួម */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  color: #1e293b;
+}
+
+/* រចនាបថក្បាលទំព័រ */
+header {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+header p {
+  margin: 10px 0 0 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* រចនាបថរបារ Menu */
 .navbar {
-  background-color: #34495e;
-  width: 100%;
+  background-color: #0f172a;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a {
-  color: white;
+  color: #94a3b8;
   text-decoration: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: 0.3s;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.navbar a:hover {
-  background-color: #16a085;
-  border-radius: 5px;
+.navbar a:hover,
+.navbar a.active {
+  color: white;
+  background-color: #1e40af;
+}
+
+/* រចនាបថប្រអប់រួម */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-left: 5px solid #3b82f6;
+  padding-left: 15px;
+}
+
+/* រៀបចំកាតសៀវភៅឱ្យរត់ជាជួរដេក (Grid Layout) */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* រចនាបថកាតសៀវភៅនីមួយៗ */
+.book-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.book-cover {
+  font-size: 90px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-cover {
+  transform: scale(1.1);
+}
+
+.book-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.3rem;
+  color: #0f172a;
+}
+
+.author {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0 0 15px 0;
+}
+
+.price {
+  color: #ef4444;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+/* រចនាបថប៊ូតុងទិញ */
+.buy-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #059669;
 }
